@@ -1,106 +1,102 @@
+body {
+    text-align: center;
+}
 
-main {
-    position: relative;
-    max-width: 900px;
+.view {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
     margin: 0 auto;
 }
-h1 {
-    text-align: center;
-    color: rgb(32, 0, 146);
-}
-.mozaic {
-line-height: 0px;
--webkit-column-count: 4;
--webkit-column-gap: 1px;
--moz-column-count: 4;
--moz-column-gap: 1px;
-column-count: 4;
-column-gap: 1px;
-align-items: center;
+
+.column {
+    flex: 200px;
 }
 
-a img {
+.container {
+    position: relative;
     width: 200px;
-    height: auto;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
-img:hover {
-    opacity: 0.5;
-}
-
-a span {
-    visibility: hidden;
-}
-
-a:hover span {
-    visibility: visible;
-    color: black;
-}
-
-.title {
+.container_hover {
     position: absolute;
-}
-
-a {
-    text-decoration: none;
-    break-before: avoid;
-    display: inline-block;
-}
-
-/*modal*/
-.modal {
-    --gap: 15px;
-    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: var(--gap);
+    right: 0;
+    height: auto;
+    width: 200px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background: rgb(0,0,0);
 }
 
-.modal__inner {
-    background: rgba(8, 11, 194, 0.313);
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.modal__top {
-    display: flex;
-    align-items: center;
-    background: rgba(3, 0, 77, 0.5);
-    font-size: larger;
-}
-
-.modal__title {
-    flex-grow: 1;
-    padding: 0 var(--gap);
-    font-size: 20px;
-}
-
-.modal__close {
-    display: flex;
-    align-items: center;
+.container:hover .container_hover:hover {
+    opacity: 0.5;
+    margin-bottom: 5px;
     cursor: pointer;
-    pad: var(--gap);
-    background: none;
-    border: none;
-    outline: none;
 }
 
-.modal__content {
-    padding: 0 var(--gap);
-    line-height: 1.5;
+h1 {
+    color: white;
+    font-weight: 700;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
 }
 
-img {
+.container_image {
+    display: block;
     width: 200px;
     height: auto;
-    padding-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal_img {
+    width: 200px;
+    height: auto;
+}
+
+.modal_content {
+    margin: 10% auto;
+    padding: 12px;
+    width: 80%;
+    height: 375px;
+    border: 1px solid #aaa;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.modal_body{
+    height: 90%;
+}
+
+.close {
+    float: right;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.close:hover,
+.cover:focus {
+    color: black;
+    font-weight: 900;
+    cursor: pointer;
 }

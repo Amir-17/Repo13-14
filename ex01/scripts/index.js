@@ -1,19 +1,19 @@
-function myModal() {
-    var modal = document.getElementsByClassName("modal");
-    var btn = document.getElementsByClassName("modal__close");
-    var span = document.getElementsByClassName("material-icons")[0];
+var modalElemnt = document.getElementById("modal");
+var span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    };
-
-    span.onclick = function () {
-        modal.style.display = "none";
-    };
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        };
-    };
+function modalOpen(param) {
+    var href = param.getAttribute("href");
+    var modalBody = modalElemnt.querySelector(".modal_body");
+    modalElemnt.style.display = "block";
+    modalBody.innerHTML = "<object data='" + href + "' class='view'></object>";
 }
+
+span.onclick = function () {
+    modalElemnt.style.display = "none";
+};
+
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};

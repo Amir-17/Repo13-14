@@ -4,102 +4,161 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery's page</title>
     <link rel="stylesheet" href="../styles/index.css" />
+    <title>Galery page</title>
   </head>
   <body>
-    <main>
-      <h1>Gallery page</h1>
-      <div class="mozaic">
-        <div class="set4">
-          <div class="card">
-            <a href="image01.html" class="hover">
-              <span class="title">
-                <h1>Marathon</h1>
-              </span>
-              <img src="../images/img1.jpg" alt="Man tying shoes" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image05.html" class="hover">
-              <span class="title">
-                <h1>Weight lifting</h1>
-              </span>
-              <img src="../images/img5.jpg" alt="Man lifting weights" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image06.html" class="hover">
-              <span class="title">
-                <h1>Basketball</h1>
-              </span>
-              <img src="../images/img6.jpg" alt="Basketball-ball on court" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image02.html" class="hover">
-              <span class="title">
-                <h1>Gymanstics</h1>
-              </span>
-              <img src="../images/img2.jpg" alt="Streching" />
-            </a>
+    <h2>Gallery page</h2>
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img1.jpg"
+            alt="Marathon"
+          />
+          <div
+            class="container_hover"
+            href="./image01.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Marathon</h1>
           </div>
         </div>
-        <div class="set4">
-          <div class="card">
-            <a href="image08.html" class="hover">
-              <span class="title">
-                <h1>Jogging</h1>
-              </span>
-              <img src="../images/img8.jpg" alt="Woman is jogging" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image03.html" class="hover">
-              <span class="title">
-                <h1>Climbing</h1>
-              </span>
-              <img src="../images/img3.jpg" alt="Climbing stairs" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image07.html" class="hover">
-              <span class="title">
-                <h1>Swimming</h1>
-              </span>
-              <img src="../images/img7.jpg" alt="Man swimming butterfly" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image09.html" class="hover">
-              <span class="title">
-                <h1>Running</h1>
-              </span>
-              <img src="../images/img9.jpg" alt="Running track" />
-            </a>
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img5.jpg"
+            alt="Weight Lifting"
+          />
+          <div
+            class="container_hover"
+            href="./image05.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Weight Lifting</h1>
           </div>
         </div>
-        <div class="set4">
-          <div class="card">
-            <a href="image04.html" class="hover">
-              <span class="title">
-                <h1>Skiing</h1>
-              </span>
-              <img src="../images/img4.jpg" alt="Man Skiing" />
-            </a>
-          </div>
-          <div class="card">
-            <a href="image10.html" class="hover">
-              <span class="title">
-                <h1>Cycling</h1>
-              </span>
-              <img src="../images/img10.jpg" alt="Man with bike" />
-            </a>
+        <div class="container">
+          <img class="container_image" src="../images/img8.jpg" alt="Jogging" />
+          <div
+            class="container_hover"
+            href="./image08.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Jogging</h1>
           </div>
         </div>
       </div>
-    </main>
 
+      <div class="column">
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img2.jpg"
+            alt="Gymnastics"
+          />
+          <div
+            class="container_hover"
+            href="./image02.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Gymnastics</h1>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img6.jpg"
+            alt="Basketball"
+          />
+          <div
+            class="container_hover"
+            href="./image06.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Basketball</h1>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img3.jpg"
+            alt="Climbing"
+          />
+          <div
+            class="container_hover"
+            href="./image03.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Climbing</h1>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img7.jpg"
+            alt="Swimming"
+          />
+          <div
+            class="container_hover"
+            href="./image07.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Swimming</h1>
+          </div>
+        </div>
+        <div class="container">
+          <img class="container_image" src="../images/img9.jpg" alt="Running" />
+          <div
+            class="container_hover"
+            href="./image09.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Running</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="container">
+          <img class="container_image" src="../images/img4.jpg" alt="Skiing" />
+          <div
+            class="container_hover"
+            href="./image04.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Skiing</h1>
+          </div>
+        </div>
+        <div class="container">
+          <img
+            class="container_image"
+            src="../images/img10.jpg"
+            alt="Cycling"
+          />
+          <div
+            class="container_hover"
+            href="./image10.html"
+            onclick="modalOpen(this)"
+          >
+            <h1>Cycling</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <div class="modal_header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal_body"></div>
+        <div class="modal_footer"></div>
+      </div>
+    </div>
     <script type="text/javascript" src="../scripts/index.js"></script>
   </body>
 </html>
